@@ -1,25 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ChromeBar from '../src/components/ChromeBar/ChromeBar';
+import ButtonBar from '../src/components/ButtonBar/ButtonBar';
+import Gantt from '../src/components/Gantt/Gantt';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='App'>
+      <ChromeBar />
+      <h2 style={{ fontSize: '26px', fontWeight: 'bold', paddingLeft: '1rem' }}>
+        trez
+      </h2>
+      <ButtonBar />
+      <Gantt />
+    </main>
   );
 }
 
