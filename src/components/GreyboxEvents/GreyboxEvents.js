@@ -8,7 +8,7 @@ export default function GreyboxEvents() {
           width: '30px',
           height: '40px',
           backgroundColor: 'lightgray',
-          marginLeft: '300px',
+          marginLeft: '450px',
           borderRadius: '5px',
           textAlign: 'center',
         }}

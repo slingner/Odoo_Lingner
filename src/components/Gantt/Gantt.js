@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Container, ToastHeader } from 'react-bootstrap';
+import { Table, Container } from 'react-bootstrap';
 import Gantty from '../Gantty/Gantty';
 import GreyboxEvents from '../GreyboxEvents/GreyboxEvents';
 
@@ -17,8 +17,8 @@ export default function Gantt() {
     <Container fluid style={{ paddingLeft: '0px', paddingRight: '0px' }}>
       <Table bordered responsive='sm' style={{ fontSize: '14px' }}>
         <thead>
-          <tr className='d-flex flex-row'>
-            <th style={{ width: '270px' }}>Default Gantt View for x_trez</th>
+          <tr className='d-flex flex-row' style={{ width: '100%' }}>
+            <th style={{ width: '20%' }}>Default Gantt View for x_trez</th>
             <tr className='d-flex flex-column' style={{ width: '100%' }}>
               <th
                 style={{
@@ -85,11 +85,7 @@ export default function Gantt() {
             </td>
           </tr>
 
-          <div
-            className='collapse'
-            id='chart'
-            style={{ paddingLeft: '235px', width: '100%' }}
-          >
+          <div className='collapse' id='chart' style={{ paddingLeft: '17%' }}>
             <Gantty />
           </div>
         </tbody>
