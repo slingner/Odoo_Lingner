@@ -1,11 +1,11 @@
 import React from 'react';
-import { Table, Container } from 'react-bootstrap';
+import { Table, Container, ToastHeader } from 'react-bootstrap';
 import Gantty from '../Gantty/Gantty';
 import GreyboxEvents from '../GreyboxEvents/GreyboxEvents';
 
 //Table for February Month Chart with Google Gantt Chart inside
 export default function Gantt() {
-  //funtion to expand the Primary(+) Button within Table to show colored Gantt chart
+  //function to expand the Primary(+) Button within Table to show colored Gantt chart
   function onClickHandler(e) {
     const hiddenElement = e.currentTarget.nextSibling;
     hiddenElement.className.indexOf('collapse show') > -1
@@ -14,7 +14,7 @@ export default function Gantt() {
   }
 
   return (
-    <Container fluid>
+    <Container fluid style={{ paddingLeft: '0px', paddingRight: '0px' }}>
       <Table bordered responsive='sm' style={{ fontSize: '14px' }}>
         <thead>
           <tr className='d-flex flex-row'>
@@ -31,7 +31,12 @@ export default function Gantt() {
                 February 2019
               </th>
 
-              <tr>
+              <tr
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                }}
+              >
                 <th>01</th>
                 <th>02</th>
                 <th>03</th>
@@ -67,7 +72,12 @@ export default function Gantt() {
         <tbody>
           <tr onClick={onClickHandler}>
             <td
-              style={{ display: 'flex', flexDirection: 'row', padding: '5px' }}
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                padding: '5px',
+                cursor: 'pointer',
+              }}
             >
               <ion-icon name='add-outline'></ion-icon>
               Primary
