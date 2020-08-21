@@ -18,7 +18,7 @@ export default function Gantt() {
       <Table bordered responsive='sm' style={{ fontSize: '14px' }}>
         <thead>
           <tr className='d-flex flex-row' style={{ width: '100%' }}>
-            <th style={{ width: '20%' }}>Default Gantt View for x_trez</th>
+            <th style={{ width: '18%' }}>Default Gantt View for x_trez</th>
             <tr className='d-flex flex-column' style={{ width: '100%' }}>
               <th
                 style={{
@@ -85,7 +85,7 @@ export default function Gantt() {
             </td>
           </tr>
 
-          <div className='collapse' id='chart' style={{ paddingLeft: '17%' }}>
+          <div className='collapse' id='chart' style={{ paddingLeft: '16%' }}>
             <Gantty />
           </div>
         </tbody>

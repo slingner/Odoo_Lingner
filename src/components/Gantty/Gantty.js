@@ -145,7 +145,7 @@ export default function Gantty() {
         options={{
           title: 'February 2019',
           height: 800,
-          width: '1675',
+          width: '1660',
           gantt: {
             trackHeight: 30,
           },
